@@ -64,13 +64,13 @@ soup=BeautifulSoup(driver.page_source, 'html.parser')
 # Checks if date is available and clicks on the tab. Else it waits 
 works = True
 while works:
-    try:
-        soup.find('a', {'href': date})
+    if soup.find('a', {'href': date}):
         break
-    except:
+    else:
         time.sleep(date_monitor_freq)
         driver.refresh()
         continue
+        
 
 # Parses the HTML and returns the tab table of the date. If timeslot is available, directs driver to reserve link. Otherwise, monitors the page until slot is available
 while not reserve_link:
