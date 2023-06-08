@@ -1,0 +1,16 @@
+place = https://www.nycgovparks.org/tennisreservation/availability/11
+date =  2023-06-14
+timeslot = 1:00 p.m.
+date_monitor_freq = 5
+timeslot_monitor_freq = 5
+play_type = doubles
+name = Joe Mama
+email = joemama@gmail.com
+address = 123 Mama St
+apt = 
+city = New York
+zipcode = 10001
+phone_number = 9179179179
+ccnum = 1234123412341234
+expdate = 11/25
+cvv = 123
