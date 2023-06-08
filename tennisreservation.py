@@ -64,6 +64,7 @@ soup=BeautifulSoup(driver.page_source, 'html.parser')
 # Checks if date is available and clicks on the tab. Else it waits 
 works = True
 while works:
+    soup=BeautifulSoup(driver.page_source, 'html.parser')
     if soup.find('a', {'href': date}):
         break
     else:
