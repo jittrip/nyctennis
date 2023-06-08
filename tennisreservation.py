@@ -65,7 +65,7 @@ soup=BeautifulSoup(driver.page_source, 'html.parser')
 works = True
 while works:
     soup=BeautifulSoup(driver.page_source, 'html.parser')
-    if soup.find('a', {'href': date}):
+    if soup.find('a', {'href': f'#{date}'}):
         break
     else:
         time.sleep(date_monitor_freq)
